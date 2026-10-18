@@ -1,19 +1,52 @@
-﻿# SOLEVA storefront
+# SOLEVA — Fashion Storefront
 
-SOLEVA is a static, framework-free storefront built with HTML, CSS, and browser JavaScript. It has no build step or package dependencies. Open `index.html` in a browser to preview it, or serve this directory as the site root with any static web server.
+SOLEVA is a modern, responsive fashion storefront built with HTML, CSS, and vanilla JavaScript. It features a bilingual shopping experience with English and Arabic support, including RTL layout for Arabic.
 
-## Current scope
+## Features
 
-- English and Arabic UI with a persisted language choice and RTL layout.
-- Product browsing, bilingual search, category, gender, size, color and price filters, sorting, size and color selection, cart, and wishlist use browser storage.
-- The catalog is sample data in `js/products.js`. Fifteen of sixteen products use local AI-generated concept images from two supplied image collections; one unmatched style keeps its existing SVG concept illustration. These are portfolio visuals, not verified photos of manufactured stock. Some concepts may contain inaccurate brand-like marks; no affiliation or authenticity is claimed. Replace these visuals with approved product photography before publishing a real catalog.
-- The supplied homepage hero image is stored locally at `assets/photography/soleva-home-hero.png`. The homepage also uses two Pexels editorial lifestyle photos that are not represented as specific SOLEVA products.
-- Photo sources, attribution/licensing notes and catalog concept mappings are listed in `assets/photography/manifest.md`.
-- Checkout is a local form demonstration only. It does not submit orders, process payment, or transmit customer details. No card details are requested.
-- Newsletter signup is not connected to a mailing service.
+- **Bilingual Interface:** English and Arabic with saved language preferences.
+- **Product Catalog:** Browse products with search, filtering, and sorting.
+- **Advanced Filters:** Filter by category, gender, size, color, and price.
+- **Product Selection:** Choose available sizes and colors.
+- **Shopping Cart:** Add products and manage cart items.
+- **Wishlist:** Save favorite products for later.
+- **Responsive Design:** Optimized for desktop and mobile screens.
+- **Browser Storage:** Persist selected preferences and shopping data locally.
 
-## Production integrations still needed
+## Tech Stack
 
-Connect a trusted product and inventory source, order processing, a payment provider, and any customer or newsletter services before accepting real orders. Confirm shipping and returns policies and add approved contact and policy pages before publishing.
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Browser Local Storage
 
-There is no build or automated test command in this static project. Browser behavior and JavaScript syntax were checked manually during this update.
+## Getting Started
+
+No installation, build tools, or package dependencies are required.
+
+1. Clone the repository.
+2. Open `index.html` in your browser.
+
+Alternatively, serve the project directory using any static web server.
+
+## Project Structure
+
+- `index.html` — Homepage
+- `shop.html` — Product catalog
+- `product.html` — Product details
+- `checkout.html` — Checkout demonstration
+- `wishlist.html` — Wishlist page
+- `css/` — Stylesheets
+- `js/` — JavaScript and product catalog data
+- `assets/` — Images and other static assets
+- `SOLEVA_product_photos/` — Product concept image collection
+
+## Important Notes
+
+This project is a frontend portfolio demonstration. The checkout does not process payments or submit real orders, and the newsletter form is not connected to a mailing service. Product images are concept visuals and should be replaced with approved product photography before launching a real store.
+
+A production version would require backend services, inventory management, order processing, secure payment integration, and appropriate shipping, returns, and privacy policies.
+
+## License
+
+Add a license file if you intend to distribute or reuse this project under specific terms.
